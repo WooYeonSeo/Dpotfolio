@@ -4,6 +4,9 @@ import Profile from "compositions/Profile";
 import Card from "components/Card";
 import ContentCenterFrame from "components/ContentCenterFrame";
 import "style/main.css";
+import "style/commonMain.css";
+import { Tag } from "antd";
+
 function Main() {
   return (
     <>
@@ -29,6 +32,40 @@ function Main() {
               커뮤니케이션하고 좋은 코드에 대해 고민하고 싶습니다.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="second-background">
+        <p className="main-title">
+          <span>01.</span> TECH STACK
+        </p>
+
+        <div>
+          <p className="tech-box">
+            <span>COMMON </span>
+            <Tag color="purple">JavaScript</Tag>
+            <Tag color="purple">Java</Tag>
+            <Tag color="purple">TypeScript</Tag>
+            <Tag color="purple">NCP</Tag>
+            <Tag color="purple">Git</Tag>
+            <Tag color="purple">Sequelize</Tag>
+            <Tag color="purple">Webpack</Tag>
+          </p>
+          <p className="tech-box">
+            <span>FRONT_END </span>
+            <Tag color="purple">HTML</Tag>
+            <Tag color="purple">CSS</Tag>
+            <Tag color="purple">Sass</Tag>
+            <Tag color="purple">React</Tag>
+            <Tag color="purple">Apollo-Client</Tag>
+          </p>
+          <p className="tech-box">
+            <span>BACK_END </span>
+            <Tag color="purple">Node.js</Tag>
+            <Tag color="purple">Mysql</Tag>
+            <Tag color="purple">Docker</Tag>
+            <Tag color="purple">GraphQL</Tag>
+            <Tag color="purple">Sequelize</Tag>
+          </p>
         </div>
       </div>
       <ContentCenterFrame>
