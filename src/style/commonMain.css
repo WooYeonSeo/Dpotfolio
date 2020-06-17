@@ -20,7 +20,7 @@
   text-align: left;
 }
 
-.tech-box span:first-child {
+.tech-box span:nth-child(2) {
   min-width: 6rem;
   display: inline-block;
 }

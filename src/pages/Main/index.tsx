@@ -5,6 +5,7 @@ import Card from "components/Card";
 import ContentCenterFrame from "components/ContentCenterFrame";
 import "style/main.css";
 import "style/commonMain.css";
+import "style/common.css";
 import { Tag } from "antd";
 
 function Main() {
@@ -41,7 +42,9 @@ function Main() {
 
         <div>
           <p className="tech-box">
+            <span className="square_dot"></span>
             <span>COMMON </span>
+
             <Tag color="purple">JavaScript</Tag>
             <Tag color="purple">Java</Tag>
             <Tag color="purple">TypeScript</Tag>
@@ -51,6 +54,7 @@ function Main() {
             <Tag color="purple">Webpack</Tag>
           </p>
           <p className="tech-box">
+            <span className="square_dot"></span>
             <span>FRONT_END </span>
             <Tag color="purple">HTML</Tag>
             <Tag color="purple">CSS</Tag>
@@ -59,6 +63,7 @@ function Main() {
             <Tag color="purple">Apollo-Client</Tag>
           </p>
           <p className="tech-box">
+            <span className="square_dot"></span>
             <span>BACK_END </span>
             <Tag color="purple">Node.js</Tag>
             <Tag color="purple">Mysql</Tag>
