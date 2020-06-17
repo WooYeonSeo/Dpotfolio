@@ -1,5 +1,7 @@
+@import url("style/reset.css");
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
