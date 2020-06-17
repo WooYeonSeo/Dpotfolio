@@ -11,4 +11,4 @@ jobs:
       - name: npm install
         run: npm install
       - name: run test code
-        run: npm test
+        run: npm test --watchAll
