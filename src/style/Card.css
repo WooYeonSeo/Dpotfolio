@@ -1,0 +1,26 @@
+.card-container {
+  margin: 1rem;
+  border-radius: 3px;
+  position: relative;
+  background-color: white;
+}
+
+.card-box {
+  border: 1px solid #4f5e6e4a;
+}
+.card-title {
+  padding: 2rem 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card-underline {
+  border-bottom: 1px solid #4f5e6e4a;
+}
