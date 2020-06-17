@@ -16,6 +16,15 @@ function Profile() {
         개발팀에서 같이 커뮤니케이션하고 좋은 코드에 대해 고민할 수 있는 팀에서
         근무하고 싶습니다.
       </p>
+      <div>
+        <p>position : Front-End</p>
+        <p>GitHub | https://github.com/WooYeonSeo</p>
+        <p>
+          보유기술 웹일반 | Javascript, Java, TypeScript 프론트엔드 | HTML, CSS,
+          React, Sass, Apollo-Client 백엔드 | Node.js, Mysql, Docker, Cassandra,
+          GraphQL 기타 | Git, NCP, Sequelize
+        </p>
+      </div>
     </div>
   );
 }
