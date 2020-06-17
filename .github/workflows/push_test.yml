@@ -1,7 +1,6 @@
 name: PR Test
 on: 
-	pull_request:   #pr이벤트를 감지
-        	- fe  #test라는 브랜치에 한해서
+	push: 
 
 jobs: 
 	Run Jest:
