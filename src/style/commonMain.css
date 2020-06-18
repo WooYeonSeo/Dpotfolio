@@ -24,3 +24,14 @@
   min-width: 6rem;
   display: inline-block;
 }
+
+.tech-chart {
+  position: relative;
+}
+.tech-chart div {
+  position: absolute;
+  display: inline-block;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

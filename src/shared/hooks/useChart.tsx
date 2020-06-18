@@ -7,7 +7,8 @@ const CHART_FLOW_DURATION = 1000;
 interface ChartProps {
   size: { width?: number; height: number };
   data: (string | number | Date)[][];
-  types: { [key in string]: ChartTypes };
+  types?: { [key in string]: ChartTypes };
+  type?: ChartTypes;
   format: {
     value?(value: any, ratio: number, id: string, index: number): string;
   };
@@ -27,6 +28,7 @@ function useChart({
   data,
   colors,
   types,
+  type,
   groups,
   format,
   axis,
@@ -50,6 +52,7 @@ function useChart({
           columns: [...data],
           colors,
           types,
+          type,
           groups
         },
         grid,

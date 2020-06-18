@@ -6,9 +6,56 @@ import ContentCenterFrame from "components/ContentCenterFrame";
 import "style/main.css";
 import "style/commonMain.css";
 import "style/common.css";
+import "billboard.js/dist/theme/insight.css";
+
 import { Tag } from "antd";
 
+import useChart from "shared/hooks/useChart";
+import { formatNumberComma } from "shared/util/format/formatNumberComma";
+
+const creatTypes = (stackedDatafeilds: (string | number)[]) => {
+  return (
+    stackedDatafeilds &&
+    stackedDatafeilds.reduce((result, current) => {
+      return { ...result, [current]: "bar" };
+    }, {})
+  );
+};
 function Main() {
+  const format = {
+    value: (value: number) => formatNumberComma(value)
+  };
+  const data = [
+    ["x", "React", "Typescript", "Webpack", "Docker", "Javscript", "NCP "],
+    ["skill point", 300, 200, 170, 130, 120, 20]
+  ];
+
+  const { setRef, RenderChart } = useChart({
+    format,
+    data,
+    type: "bar",
+    size: {
+      height: 500,
+      width: 900
+    },
+    xAxis: "x",
+    axis: {
+      rotated: true,
+      x: {
+        type: "category",
+        height: 130,
+
+        tick: {
+          multiline: false,
+          tooltip: true
+        }
+      }
+    },
+    colors: {
+      "skill point": "#4c4b71"
+    }
+  });
+
   return (
     <>
       <Header />
@@ -71,6 +118,9 @@ function Main() {
             <Tag color="purple">GraphQL</Tag>
             <Tag color="purple">Sequelize</Tag>
           </p>
+        </div>
+        <div className="tech-chart">
+          <div ref={setRef as any}></div>
         </div>
       </div>
       <ContentCenterFrame>
