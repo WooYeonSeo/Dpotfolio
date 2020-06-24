@@ -12,6 +12,7 @@
   font-size: 2rem;
   font-weight: 500;
   text-align: left;
+  margin-bottom: 0;
 }
 .main-title span {
   font-weight: 800;
@@ -20,6 +21,9 @@
   text-align: left;
 }
 
+.tag-box {
+  margin-top: 1rem;
+}
 .tech-box span:nth-child(2) {
   min-width: 6rem;
   display: inline-block;
@@ -31,7 +35,34 @@
 .tech-chart div {
   position: absolute;
   display: inline-block;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.work-container {
+  margin: 3rem 1rem;
+  position: relative;
+  height: 100%;
+}
+.work-container .work-card p {
+  font-weight: bold;
+}
+.work-container > ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.work-card {
+  margin-bottom: 3rem;
+}
+
+.white-background {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100%;
+  padding: 3rem 4rem;
 }

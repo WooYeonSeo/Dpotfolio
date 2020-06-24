@@ -52,6 +52,8 @@
 }
 .profile-text {
   padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 .profile-text p:nth-child(1) {
   font-size: 1.3rem;
@@ -65,4 +67,11 @@
   font-weight: 400;
   padding: 1rem 2rem;
   text-align: left;
+  flex: 1;
+}
+.contact-info {
+}
+.contact-info > a {
+  margin-right: 0.75rem;
+  cursor: pointer;
 }

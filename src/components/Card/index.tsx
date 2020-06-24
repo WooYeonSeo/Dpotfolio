@@ -7,10 +7,12 @@ interface CardSetting {
 function Card({
   children,
   title,
+  subTitle,
   cardSetting
 }: {
   children: React.ReactFragment;
-  title: string;
+  title: React.ReactFragment;
+  subTitle?: React.ReactFragment;
   cardSetting?: CardSetting;
 }) {
   return (
@@ -19,7 +21,15 @@ function Card({
         cardSetting && !cardSetting.isBorder ? "" : "box"
       }`}
     >
-      <p className="card-title card-underline">{title}</p>
+      <p
+        className={`card-title ${
+          cardSetting && !cardSetting.isUnderline ? "" : "card-underline"
+        }`}
+      >
+        {title}
+        <span className="card-subtitle">{subTitle}</span>
+      </p>
+
       <p className="card-body">{children}</p>
     </div>
   );
