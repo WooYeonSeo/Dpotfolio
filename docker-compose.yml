@@ -11,6 +11,22 @@ services:
     networks:
       - frontend
 
+    appFile:
+      container_name: dportfolio
+
+      build:
+        context: .
+        dockerfile: ./node.Dockerfile
+      ports:
+        - "5000:5000"
+      volumes:
+        - "dportfolio_:/var/lib/mysql"
+      links:
+        - db
+      networks:
+        - backend
+ volumes:
+      - ./docker/data:/var/lib/postgresql/data
 networks: # 가장 기본적인 bridge 네트워크
   frontend:
     driver: bridge
